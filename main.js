@@ -1,11 +1,16 @@
+const chicagoData = () => {
+	return new Promise((resolve, reject) => {
+		$.ajax('https://data.cityofchicago.org/resource/9pkb-4fbf.json')
+			.done(response) => {
+                ChicagoInfo(response);
+            })
+            .fail(error => {
+                console.error(error);
+            });
 
-const pets = () => {
+            const loadData = ChicagoLoadData => {
+                let
+            }
+};
 
-    $.get('http://shibe.online/api/shibes?count=[1-100]&urls=[true/false]&httpsUrls=[true/false]')
-        .done((data) => 
-            writePet ();
-    )
-    .fail ((error)) => {
-        console.error();
-    }
-}
+chicago();
